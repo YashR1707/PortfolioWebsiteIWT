@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background-color: #A67B5B;
+            color: white;
+            font-family: "Poppins", sans-serif;
+           
+        }
+        main
+        {
+           display: flex;
+        }
+        nav
+        {
+            display: flex;
+            justify-content: space-around;        
+            align-items: center;
+            background-color: #6F4E37;
+            height: 80px;
+        }
+        nav ul
+        {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li
+        {
+            list-style: none;
+            margin: 0px 23px;
+        }
+        .left
+        {
+            font-size: 2rem;
+        }
+        .firstsection
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10% 0;
+        }
+        .firstsection > div
+        {
+            width: 30%;
+        }
+        .beige
+        {
+            color: #FED8B1;
+        }
+        .rightsection
+        {
+            overflow: hidden;
+        }
+        .rightsection img
+        {
+            width: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+        .rightsection img:hover
+        {
+            transform: scale(1.15);
+        }
+        .leftsection
+        {
+            font-size: 3rem;
+        }
+        nav ul li a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover
+        {
+            color: #a37f64;
+        }
+        #element
+        {
+            color: #FED8B1;
+        }
+        footer
+        {
+            background-color: #cba384;
+            display: flex;
+            justify-content: space-around;        
+            align-items: center;
+            height: 100px;
+        }
+        footer img
+        {
+            
+            align-items: center;
+            height: 50px;
+        }
+        footer ul
+        {
+            display: flex;
+            justify-content: center;
+        }
+        footer ul li
+        {
+            list-style: none;
+            margin: 0px 23px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Yash's Portfolio</div>
+            <div class="right">
+                <ul>
+                   <li><a href="">Home</a></li> 
+                   <li><a href="">About</a></li>
+                   <li><a href="">Services</a></li>
+                   <li><a href="">Projects</a></li>
+                   <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span class="beige" >Yash</span>
+                <div>and I am a </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="me.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web developer.', 'Java developer.', 'Freelance photographer.','Freelance videographer.', 'Freelance video editor.'],
+          typeSpeed: 40,
+        });
+      </script>
+    <footer>
+        <div>
+            <ul>
+        <li><a href="https://github.com/YashR1707"><img src="GitHubLogo.png" alt="GitHub" ></a></li>
+        <li><a href="https://www.linkedin.com/in/yash-rathore-516340305/"><img src="LinkedInLogo.png" alt="LinkedIn" ></a></li>
+    </ul>
+    </div>
+</footer>
+</body>
+</html>
